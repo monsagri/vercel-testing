@@ -7,13 +7,6 @@ interface FeatureFlags {
 // We use prefixes to avoid mixing up the flags with other Edge Config values
 const prefixKey = (key: string) => `featureFlagsAppleStore_${key}`
 
-export async function get(key: keyof FeatureFlags) {
-  const prefixedKey = prefixKey(key)
-  const edgeConfig = createClient(process.env.EDGE_CONFIG)
-  const featureFlag = await edgeConfig.get<FeatureFlags>(prefixedKey)
-  return featureFlag
-}
-
 export async function set(key: keyof FeatureFlags, value: boolean) {
   if (!process.env.AUTH_BEARER_TOKEN) {
     throw new Error('Missing Environment Variable AUTH_BEARER_TOKEN')

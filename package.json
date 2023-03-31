@@ -10,7 +10,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@launchdarkly/node-server-sdk": "^0.3.0",
     "@vercel/edge-config": "0.1.0-canary.15",
+    "launchdarkly-node-server-sdk": "^7.0.1",
     "next": "canary",
     "react": "latest",
     "react-dom": "latest"
