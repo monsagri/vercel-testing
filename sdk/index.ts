@@ -11,7 +11,6 @@ interface InitParams {
 type Callback = (err: any, res: LDFlagValue) => void
 
 const init = ({edgeSDK, sdkKey, originalConfig = {}}: InitParams) => {
-  console.log('initing the sdk')
   const config = configuration.validate(edgeSDK, sdkKey, originalConfig);
   const ldClient = ldInit('none', config);
   // TODO: type this

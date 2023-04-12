@@ -4,6 +4,9 @@ dependencies:
   '@launchdarkly/node-server-sdk':
     specifier: ^0.3.0
     version: 0.3.0
+  '@launchdarkly/vercel-server-sdk':
+    specifier: link:../js-core/packages/sdk/vercel
+    version: link:../js-core/packages/sdk/vercel
   '@vercel/edge-config':
     specifier: 0.1.0-canary.15
     version: 0.1.0-canary.15

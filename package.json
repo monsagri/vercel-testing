@@ -1,5 +1,6 @@
 {
   "name": "feature-flag-apple-store",
+  "version": "0.1.0",
   "repository": "https://github.com/vercel/examples.git",
   "license": "MIT",
   "private": true,
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@launchdarkly/node-server-sdk": "^0.3.0",
+    "@launchdarkly/vercel-server-sdk": "link:../js-core/packages/sdk/vercel",
     "@vercel/edge-config": "0.1.0-canary.15",
     "launchdarkly-node-server-sdk": "^7.0.1",
     "next": "canary",

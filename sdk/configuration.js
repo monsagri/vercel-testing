@@ -15,8 +15,8 @@ module.exports = (function () {
       contextKeysFlushInterval: 300,
       diagnosticOptOut: true,
       diagnosticRecordingInterval: 900,
-      wrapperName: 'cloudflare',
-      wrapperVersion: PACKAGE_JSON.version,
+      wrapperName: 'vercel',
+      wrapperVersion: PACKAGE_JSON.version.toString(),
     };
   };
 

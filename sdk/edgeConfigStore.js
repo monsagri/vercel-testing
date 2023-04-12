@@ -29,7 +29,6 @@ function vercelFeatureStoreInternal(edgeConfig, sdkKey, logger) {
         }
         const kindKey = kind.namespace === 'features' ? 'flags' : kind.namespace;
         const foundValue = item[kindKey][flagKey]
-        console.log({kindKey, res: foundValue})
         cb(foundValue);
         // return 
       })
