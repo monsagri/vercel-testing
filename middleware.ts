@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient, parseConnectionString } from '@vercel/edge-config'
-import init from '@launchdarkly/vercel-server-sdk'
+import { init } from '@launchdarkly/vercel-server-sdk'
 
 export const config = {
   matcher: '/',
@@ -8,7 +8,7 @@ export const config = {
 
 const vercelSDK = createClient(process.env.EDGE_CONFIG)
 
-const ldClient = init(vercelSDK, 'test', {})
+const ldClient = init('test', vercelSDK)
 
 export async function middleware(req: NextRequest) {
   await ldClient.waitForInitialization()

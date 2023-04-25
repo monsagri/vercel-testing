@@ -8,8 +8,8 @@ dependencies:
     specifier: link:../js-core/packages/sdk/vercel
     version: link:../js-core/packages/sdk/vercel
   '@vercel/edge-config':
-    specifier: 0.1.0-canary.15
-    version: 0.1.0-canary.15
+    specifier: ^0.1.7
+    version: 0.1.7
   launchdarkly-node-server-sdk:
     specifier: ^7.0.1
     version: 7.0.1
@@ -359,8 +359,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/edge-config@0.1.0-canary.15:
-    resolution: {integrity: sha512-CgafJ+qlF2XZU5z6YJ/Dc06A9z/3KHeuenQqZdQQNMEm1yYyZcKkL3i68qSXT/4h4axZ2oqzcdwHJA2A6Yqt9g==}
+  /@vercel/edge-config@0.1.7:
+    resolution: {integrity: sha512-mXKotO6Tss6Ke6mhHC21m6EggV3hO9RrxUgKEUbOb/KY+IJKl35wKKCYuFCDLXtwk9OfpJkQbXeu/MiIjseAOw==}
     engines: {node: '>=14.6'}
     dev: false
 
