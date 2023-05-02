@@ -11,7 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@launchdarkly/vercel-server-sdk": "link:../js-core/packages/sdk/vercel",
+    "@launchdarkly/vercel-server-sdk": "^0.2.2",
     "@vercel/edge-config": "^0.1.7",
     "next": "canary",
     "react": "latest",
